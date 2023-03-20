@@ -2,7 +2,7 @@
 const testimonials = [
   {
     name: "Project Management",
-    job: "Successfully plan, execute, and deliver projects on time and within budget. We understand your specific project needs and objectives, and we develop customized project plans and timelines that we know will align with the your goals.",
+    job: "Successfully plan, execute, and deliver projects on time and within budget. We understand your specific project needs and objectives, and we develop customized project plans and timelines we know will align with the your goals.",
     image: "Pictures/project.png",
     
   },
