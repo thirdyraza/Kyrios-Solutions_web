@@ -105,4 +105,35 @@ sr.reveal(`.home__data, .home__img,
     interval: 200
 })
 
+/*==================== CAROUSEL ====================*/
 
+var myIndex = 0;
+carousel();
+function carousel() 
+{
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) 
+  {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+var myIndex = 0;
+slide();
+function slide() 
+{
+  var a;
+  var b = document.getElementsByClassName("mySlides-cue");
+  for (a = 0; a < b.length; a++) 
+  {
+   b[a].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > b.length) {myIndex = 1}    
+  b[myIndex-1].style.display = "block";  
+  setTimeout(slide, 2000); // Change image every 2 seconds
+}
